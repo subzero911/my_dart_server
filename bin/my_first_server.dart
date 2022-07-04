@@ -8,7 +8,7 @@ Handler init() {
   var app = Router().plus;
 
   app.get('/', () => File('frontend/index.html'));
-  app.get('/api/hello', () => Response.ok('Hello from API'));
+  app.get('/api/v1/hello', () => Response.ok('Hello world'));
 
   return app;
 }
